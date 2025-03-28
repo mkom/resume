@@ -2,13 +2,17 @@ import type { PortfolioSection } from '@/types/sections/portfolio-section.types'
 import type { ReadonlyDeep } from 'type-fest';
 import { demo, github, mockups, website } from '../helpers/links';
 import {
+  airtable,
+  bootstrap,
   chakraUi,
   eslint,
   firebase,
   jest,
+  jquery,
   nestJs,
   nextJs,
   nx,
+  php,
   pnpm,
   postgreSql,
   prettier,
@@ -16,6 +20,8 @@ import {
   sass,
   tailwindCss,
   typescript,
+  wordpress,
+  yarn,
 } from '../helpers/skills';
 
 const portfolioSectionData = {
@@ -31,98 +37,164 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'Elevate Washington',
+      image: import('@/assets/portfolio/logo_elevate.png'),
+      dates: [new Date('2019-07'), null],
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Team size', value: '5 people' },
+        { label: 'My role', value: ['Front-end Developer', 'Maintenance', ] },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
-      ],
-      screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
-      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
+      // ],
+      // screenshots: [
+      //   { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
+      //   { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
+      //   { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+      // ],
       description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+        'Developed a large-scale web platform using WordPress with custom functionalities, and Integrated RESTful APIs with backend services.',
       tagsList: {
         title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        tags: [wordpress(), sass(), yarn(), eslint(), bootstrap()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [ website({ url: 'https://elevatewashington.org/' })],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
+      name: 'Idaho Launch',
+      image: import('@/assets/portfolio/logo_idaho.png'),
+      dates: [new Date('2023-09'), null],
       details: [
         { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
+        { label: 'My role', value: 'Maintenance and Bug Fixing' },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
-      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
+      // ],
       description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
+      'Maintenance and Integrated RESTful APIs with backend services and Airtable. Integrating real-time data updates and user-friendly interfaces.',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        tags: [php(), jquery(), yarn(),airtable(),bootstrap()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [website({ url: 'https://idaholaunch.com/' })],
     },
     {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
+      name: 'Next Steps Idaho',
+      image: import('@/assets/portfolio/ns-logo.png'),
+      dates: [new Date('2023-09'), null],
+      details: [
+        { label: 'Team size', value: '7 people' },
+        { label: 'My role', value: 'Maintenance and Bug Fixing' },
+        { label: 'Category', value: ['Web app'] },
+      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
+      // ],
+      description:
+      'Maintenance and Integrated RESTful APIs with backend services. Integrating real-time data updates and user-friendly interfaces.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [wordpress(),php(), jquery(), yarn(),bootstrap()],
+      },
+      links: [website({ url: 'https://nextsteps.idaho.gov/high-school-learning-plans' })],
+    },
+    {
+      name: 'MRSC Rosters',
+      image: import('@/assets/portfolio/logo_mrsc_.png'),
+      dates: [new Date('2024-07'), null],
       details: [
         { label: 'Team size', value: '3 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
-        { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'My role', value: ['Front-end Developer', 'Maintenance'] },
+        { label: 'Category', value: ['Web app'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
-      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
+      // ],
       description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+        'Maintenance and Integrated RESTful APIs with backend services',
       tagsList: {
         title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        tags: [php(), jquery()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
+      links: [website({ url: 'https://mrscrosters.org/' })],
     },
     {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
+      name: 'Vedic',
+      image: import('@/assets/portfolio/logo-vedic.png'),
+      dates: [new Date('2024-12'), new Date('2025-01')],
       details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
+        { label: 'Team size', value: '3 people' },
+        { label: 'My role', value: ['Front-end Developer', ] },
+        { label: 'Category', value: ['Ecommerce'] },
       ],
-      pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
-      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
+      // ],
+      // screenshots: [
+      //   { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
+      //   { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
+      //   { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+      // ],
       description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
+        'Developed and rebuilding the website using Divi and WooCommerce.',
       tagsList: {
         title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
+        tags: [wordpress(), sass(), yarn(), eslint(), bootstrap()],
       },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
+      links: [ website({ url: 'https://vedic.id/' })],
     },
+    {
+      name: 'ArkoPay',
+      image: import('@/assets/portfolio/logo_arkopay.png'),
+      dates: [new Date('2023-11'), null],
+      details: [
+        { label: 'Team size', value: '3 people' },
+        { label: 'My role', value: ['Front-end Developer', ' Maintenance'] },
+        { label: 'Category', value: ['Web app'] },
+      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
+      // ],
+      description:
+        'Developed a large-scale web platform using WordPress with custom functionalities. Led the frontend development of a data-driven web app using Airtable, integrating real-time data updates and user-friendly interfaces.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [wordpress(), sass(), yarn(), bootstrap(), airtable()],
+      },
+      links: [ website({ url: 'https://arkopay.com/' })],
+    },
+    {
+      name: 'Chin’an Gaming Hall ',
+      image: import('@/assets/portfolio/logo-Chin_an.png'),
+      dates: [new Date('2025-02'), new Date('2025-02')],
+      details: [
+        { label: 'Team size', value: '1 people' },
+        { label: 'My role', value: ['Front-end Developer', 'Maintenance'] },
+        { label: 'Category', value: ['Landing page'] },
+      ],
+      // pdfDetails: [
+      //   { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
+      //   { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
+      // ],
+      description:
+        'Developed a large-scale web platform using Nextjs with custom functionalities. Led the frontend development of a data-driven web app using Airtable, integrating real-time data updates and user-friendly interfaces.',
+      tagsList: {
+        title: 'Technologies',
+        tags: [nextJs(), tailwindCss(), airtable()],
+      },
+      links: [ website({ url: 'https://chinancasino.com/' })],
+    },
+    
+   
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;
 

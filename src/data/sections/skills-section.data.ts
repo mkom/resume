@@ -17,6 +17,12 @@ import {
   supabase,
   tailwindCss,
   typescript,
+  wordpress,
+  bootstrap,
+  nextJs,
+  yarn,
+  airtable,
+  jquery
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -30,50 +36,57 @@ const skillsSectionData = {
     {
       title: 'I already know',
       skills: [
-        react({
+        wordpress({
           level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
+          // description:
+          //   'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
         }),
-        typescript({
+        nextJs({
           level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          // description:
+          //   'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+        }),
+        jquery({
+          level: 4,
+          // description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
         }),
         sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+          level: 5,
+          // description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
+        bootstrap({ level: 5 }),
+        tailwindCss({ level: 5 }),
+        // prettier({ level: 5 }),
         eslint({
           level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+          // description:
+          //   'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
         }),
-        nestJs({
-          level: 3,
-          description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+      
+        yarn({
+          level: 4,
+          // description:
+          //   'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
         }),
+        airtable({ level: 4 }),
         postgreSql({ level: 2 }),
         mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        // firebase({ level: 1 }),
+        // pnpm({ level: 3 }),
       ],
     },
-    {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
-    },
-    {
-      title: 'I speak',
-      skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
-      ],
-    },
+    // {
+    //   title: 'I want to learn',
+    //   skills: [apolloGraphql(), astro(), supabase(), cypress()],
+    // },
+    // {
+    //   title: 'I speak',
+    //   skills: [
+    //     { icon: 'circle-flags:pl', name: 'Polish - native' },
+    //     { icon: 'circle-flags:us', name: 'English - C1' },
+    //     { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+    //   ],
+    // },
   ],
 } as const satisfies ReadonlyDeep<SkillsSection>;
 

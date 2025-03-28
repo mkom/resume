@@ -164,3 +164,47 @@ export const vue = createSkillFactory({
   iconColor: '#4FC08D',
   url: 'https://vuejs.org/',
 });
+
+export const wordpress = createSkillFactory({
+  name: 'WordPress',
+  icon: 'simple-icons:wordpress',
+  iconColor: '#2986CC',
+  url: 'https://wordpress.org/',
+});
+
+export const bootstrap = createSkillFactory({
+  name: 'Bootstrap',
+  icon: 'simple-icons:bootstrap',
+  iconColor: '#2986CC',
+  url: 'https://getbootstrap.com/',
+});
+
+export const yarn = createSkillFactory({
+  name: 'yarn',
+  icon: 'simple-icons:yarn',
+  iconColor: '#b4a7d6',
+  url: 'https://yarnpkg.com/',
+});
+
+export const airtable = createSkillFactory({
+  name: 'Airtable',
+  icon: 'simple-icons:airtable',
+  iconColor: '#2986cc',
+  url: 'https://www.airtable.com/',
+});
+
+export const jquery = createSkillFactory({
+  name: 'jQuery',
+  icon: 'simple-icons:jquery',
+  iconColor: '#2986cc',
+  url: 'https://jquery.com/',
+});
+
+export const php = createSkillFactory({
+  name: 'PHP',
+  icon: 'simple-icons:php',
+  iconColor: '#2986cc',
+  url: 'https://jquery.com/',
+});
+
+

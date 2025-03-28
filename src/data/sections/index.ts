@@ -14,8 +14,8 @@ export const sections = {
   experience: experienceData,
   portfolio: portfolioData,
   education: educationData,
-  testimonials: testimonialsData,
-  favorites: favoritesData,
+  //testimonials: testimonialsData,
+  // favorites: favoritesData,
 } as const satisfies ReadonlyDeep<Sections>;
 
 export default sections;

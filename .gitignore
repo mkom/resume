@@ -11,3 +11,6 @@ stats.html
 # Favicon generation
 public/favicons
 *.generated.astro
+.lh
+.vccode
+.github
