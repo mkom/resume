@@ -65,7 +65,7 @@ const portfolioSectionData = {
     {
       name: 'Idaho Launch',
       image: import('@/assets/portfolio/logo_idaho.png'),
-      dates: [new Date('2023-09'), null],
+      dates: [new Date('2023-09'), new Date('2024-12')],
       details: [
         { label: 'Team size', value: '7 people' },
         { label: 'My role', value: 'Maintenance and Bug Fixing' },
@@ -86,7 +86,7 @@ const portfolioSectionData = {
     {
       name: 'Next Steps Idaho',
       image: import('@/assets/portfolio/ns-logo.png'),
-      dates: [new Date('2023-09'), null],
+      dates: [new Date('2023-09'), new Date('2024-12')],
       details: [
         { label: 'Team size', value: '7 people' },
         { label: 'My role', value: 'Maintenance and Bug Fixing' },
@@ -107,7 +107,7 @@ const portfolioSectionData = {
     {
       name: 'MRSC Rosters',
       image: import('@/assets/portfolio/logo_mrsc_.png'),
-      dates: [new Date('2024-07'), null],
+      dates: [new Date('2024-07'), new Date('2025-01')],
       details: [
         { label: 'Team size', value: '3 people' },
         { label: 'My role', value: ['Front-end Developer', 'Maintenance'] },
@@ -154,7 +154,7 @@ const portfolioSectionData = {
     {
       name: 'ArkoPay',
       image: import('@/assets/portfolio/logo_arkopay.png'),
-      dates: [new Date('2023-11'), null],
+      dates: [new Date('2023-11'), new Date('2024-11')],
       details: [
         { label: 'Team size', value: '3 people' },
         { label: 'My role', value: ['Front-end Developer', ' Maintenance'] },
